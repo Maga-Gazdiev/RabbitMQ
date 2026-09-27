@@ -1,6 +1,7 @@
 services:
   rabbitmq:
-    image: rabbitmq:3.13-management
+    build: .
+    image: rabbitmq-server:3.13-management
     container_name: rabbitmq_tool
     restart: unless-stopped
     env_file:
